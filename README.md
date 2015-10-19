@@ -6,7 +6,7 @@ UniLang, a badly-named esoteric programming language, is a programming language 
 It's a bit like ASM.
 
 ## Syntax
-UniLang's syntax consists of a series of operation lines; lines consisting of 0-2 variables and one operator. Variables are of the form `/[a-zA-Z0-9_]+/ and operators are anything that isn't a variable (or a semicolon) The operation lines can be:
+UniLang's syntax consists of a series of operation lines; lines consisting of 0-2 variables and one operator. Variables are of the form `/[a-zA-Z0-9_]+/` and operators are anything that isn't a variable (or a semicolon) The operation lines can be:
 * Prefix: `+v`
 * Postfix: `v+`
 * Infix: `u+v`
