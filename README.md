@@ -10,6 +10,7 @@ UniLang's syntax consists of a series of operation lines; lines consisting of 0-
 * Infix: `u+v`
 * Padfix: `+v+`
 * Nofix: `+`
+
 (Note that in padfix, the two operations must be the same, making this language context-sensitive)
 
 The effect of a line is determined by the variables at play (not their names, their values of course), the operator used, and the line's fixity.
