@@ -22,7 +22,10 @@ def lp(script):
 
     parsed = []
     for com in script:
-        if compile(r'^[^a-zA-Z0-9_][a-zA-Z0-9_]*$').match(com):
+        if compile(r'^[^a-zA-Z0-9_]$').match(com):
+            parsed.append(Nofix(com[0]))
+            
+        elif compile(r'^[^a-zA-Z0-9_][a-zA-Z0-9_]*$').match(com):
             parsed.append(Prefix(com[0], com[1:]))
 
         elif compile(r'^[a-zA-Z0-9_]*[^a-zA-Z0-9_]$').match(com):
