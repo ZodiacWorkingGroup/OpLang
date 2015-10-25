@@ -32,3 +32,12 @@ class Infix:
 
     def __repr__(self):
         return self.lhs+self.op+self.rhs
+
+class Padfix:
+    def __init__(self, lop, rop, var):
+        self.lop = lop
+        self.rop = rop
+        self.var = var
+
+    def __repr__(self):
+        return self.lop+self.var+self.rop
